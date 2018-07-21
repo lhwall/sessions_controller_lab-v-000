@@ -8,7 +8,7 @@ def create
   if session[:name]
     redirect_to controller: 'application', action: 'hello'
   elsif !params[:name] || params[:name].empty?
-    redirect_to :action => "new"
+    redirect_to login_url
   else
   session[:name] = params[:name]
   redirect_to :action => "new"
