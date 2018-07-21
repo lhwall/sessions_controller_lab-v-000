@@ -13,6 +13,8 @@ def create
 end
 end
 
+
+
 def destroy
   session.delete :name
   redirect_to :action => "create"
